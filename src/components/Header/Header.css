@@ -1,0 +1,19 @@
+:root {
+    --color-brand: #4459AD;
+    --color-B: #FAAB93;
+    --color-C: #7A94FA;
+    --color-D: #ADFA61;
+    --color-E: #7DAD4C;
+}
+.site-header {
+    margin-block-end: 3rem;
+}
+.site-header h1 {
+    color: var(--color-brand);
+}
+.menu {
+    gap: 1rem;
+}
+a:hover {
+    color: var(--color-brand);
+}
