@@ -3,16 +3,18 @@
 /* screens config */
 /* space config */
 /* shadow config */
-/* basic elements */
+/* reset style of elements */
 html {
   font-size: 16px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   padding: 0;
   margin: 0;
 }
@@ -24,6 +26,18 @@ a {
 
 li {
   list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+textarea {
+  overflow: auto;
 }
 
 /* Layout */
@@ -74,59 +88,63 @@ li {
 .flex-col {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .flex-wrap {
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .j-center {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .j-end {
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .j-around {
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .j-between {
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .j-evenly {
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 .a-center {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .a-self-center {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 /* Typography */
 .text-center {
   text-align: center;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .font-12 {
@@ -135,6 +153,10 @@ li {
 
 .font-14 {
   font-size: 0.875rem;
+}
+
+.font-16 {
+  font-size: 1rem;
 }
 
 .font-18 {
@@ -169,5 +191,5 @@ li {
 /* Effects */
 .shadow {
   -webkit-box-shadow: 0px 2px 4px 1px rgba(31, 31, 31, 0.2);
-          box-shadow: 0px 2px 4px 1px rgba(31, 31, 31, 0.2);
+  box-shadow: 0px 2px 4px 1px rgba(31, 31, 31, 0.2);
 }

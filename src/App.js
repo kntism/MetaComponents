@@ -1,11 +1,16 @@
-import './App.css';
-import Header from './components/Header/Header';
+import Header from './components/Header';
+import styled from 'styled-components';
+
+const Container = styled.div`
+  padding-top: 1rem;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+`;
 
 function App() {
   return (
-    <div className="container grid">
+    <Container className="grid">
       <Header />
-    </div>
+    </Container>
   );
 }
 
